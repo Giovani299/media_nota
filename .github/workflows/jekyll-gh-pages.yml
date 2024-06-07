@@ -1,0 +1,18 @@
+nota1 = int(input('Primeira nota: '))
+nota2 = int(input('Segunda nota: '))
+media = (nota1 + nota2) / 2
+print('Tirando {} e {} a média final é {}'.format(nota1, nota2, media))
+if media <4:
+    print('Aluno reprovado por nota!')
+elif media >=5:
+    print('O aluno está aprovado por nota, verifique as faltas!')
+   
+    
+faltas =int(input('Quantas faltas teve no ano: '))
+presenca = int(input('Quantas presenças teve no ano: '))
+media = (faltas + presenca) / 4
+print('Se {} maior que {} a média final é {}'.format(faltas, presenca, media))
+if media <75:
+    print('Aluno reprovado por faltas!')
+elif media >75:
+    print('Aluno aprovado por presença e notas, parabéns!')
